@@ -7,7 +7,10 @@ bg_image : ""
 # animated text loop
 occupations:
 - "/usr/share/elasticsearch"
-- "nc -zv infrastructure.management"
+- "bin/logstash --config.test_and_exit -f piepline.conf"
+- "nmap -sV -sS -T4 security.hardening"
+- "systemctl restart wazuh-manager"
+- "ansible-playbook infrastructure_management.yml"
 - "python3 development.py"
 
 # slider background image loop

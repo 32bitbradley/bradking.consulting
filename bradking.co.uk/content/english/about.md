@@ -5,7 +5,7 @@ image : "images/backgrounds/me.png"
 button:
   enable : true
   label : "Download my CV"
-  link : "#"
+  link : "https://bradking.consulting/cv_latest.pdf"
 
 ########################### Experience ##############################
 experience:
@@ -64,5 +64,5 @@ custom_css: ""
 ---
 
 <p>Hi there, I'm Brad, a full on techy with a love for big data, infrastructure management and cyber security.</p>
-<p>By day I'm a team blue within a national Cyber Security organization, defending our protectors against the digital bad guys. By night, I'm developing a next-generation threat intelligence platform, driven by a global network of honeypots.</p>
-<p>I also offer consultancy services to investigate problems, architect infrastructure, perform health checks or provide guidance.</p>
+<p>By day I'm a SysOps/DevOps engineer, keeping the cogs turning for a leading tech company. By night, I'm developing a next-generation threat intelligence platform, driven by a global network of honeypots.</p>
+<p>I also offer consultancy services to investigate problems, architect infrastructure, perform health checks or provide cyber secuity guidance.</p>

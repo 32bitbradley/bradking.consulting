@@ -106,7 +106,13 @@
                 
                 <b  class="is-visible" >/usr/share/elasticsearch</b>
                 
-                <b >nc -zv infrastructure.management</b>
+                <b >bin/logstash --config.test_and_exit -f piepline.conf</b>
+                
+                <b >nmap -sV -sS -T4 security.hardening</b>
+                
+                <b >systemctl restart wazuh-manager</b>
+                
+                <b >ansible-playbook infrastructure_management.yml</b>
                 
                 <b >python3 development.py</b>
                 
@@ -270,11 +276,11 @@
         <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
           <h1>About Me</h1>
           <div class="content"><p>Hi there, I'm Brad, a full on techy with a love for big data, infrastructure management and cyber security.</p>
-<p>By day I'm a team blue within a national Cyber Security organization, defending our protectors against the digital bad guys. By night, I'm developing a next-generation threat intelligence platform, driven by a global network of honeypots.</p>
-<p>I also offer consultancy services to investigate problems, architect infrastructure, perform health checks or provide guidance.</p></div>
+<p>By day I'm a SysOps/DevOps engineer, keeping the cogs turning for a leading tech company. By night, I'm developing a next-generation threat intelligence platform, driven by a global network of honeypots.</p>
+<p>I also offer consultancy services to investigate problems, architect infrastructure, perform health checks or provide cyber secuity guidance.</p></div>
           
           
-          <a href="https://bradking.consulting" class="download-cv hvr-icon-hang"> Download my CV &nbsp; &nbsp; &nbsp;</a>
+          <a href="https://bradking.consulting/cv_latest.pdf" class="download-cv hvr-icon-hang"> Download my CV &nbsp; &nbsp; &nbsp;</a>
           
           
         </div>
@@ -375,16 +381,37 @@
             
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img">
-                <img class="img-fluid" src="https://bradking.consulting/images/python-logo-black-and-white.png" alt="Python Development">
+                <img class="img-fluid" src="https://bradking.consulting/images/wazuh.png" alt="Wazuh Consultant">
               </div>
-              <div class="service-label">Python Development</div>
+              <div class="service-label">Wazuh Consultant</div>
             </div>
             
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img">
-                <img class="img-fluid" src="https://bradking.consulting/images/software-development.png" alt="Infrsatructure Management">
+                <img class="img-fluid" src="https://bradking.consulting/images/shield.png" alt="Security Consultant">
               </div>
-              <div class="service-label">Infrsatructure Management</div>
+              <div class="service-label">Security Consultant</div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-4 col-12 services-icon">
+              <div class="service-img">
+                <img class="img-fluid" src="https://bradking.consulting/images/python-logo-black-and-white.png" alt="Python">
+              </div>
+              <div class="service-label">Python</div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-4 col-12 services-icon">
+              <div class="service-img">
+                <img class="img-fluid" src="https://bradking.consulting/images/ansible_logo.png" alt="Ansible">
+              </div>
+              <div class="service-label">Ansible</div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-4 col-12 services-icon">
+              <div class="service-img">
+                <img class="img-fluid" src="https://bradking.consulting/images/linux.png" alt="Infrastructure">
+              </div>
+              <div class="service-label">Infrastructure</div>
             </div>
             
           </div>
