@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://bradking.co.uk"
+baseURL = "https://bradking.consulting"
 title = "Consult With Brad"
 theme = "somrat"
 # post pagination
@@ -67,8 +67,8 @@ logo_light = "images/logo.png"
 logo_dark = "images/logo-dark.png"
 logo_width = "150px"
 # Meta data
-description = "This is meta description"
-author = "somrat"
+description = "Consult with Bradn"
+author = "Brad King"
 
 # Preloader
 [params.preloader]
