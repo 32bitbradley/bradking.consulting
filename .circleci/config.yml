@@ -12,7 +12,7 @@ jobs:
           at: my-site
       - run: ls -lah my-site
       - aws-s3/sync:
-          from: "bradking.consulting/public"
+          from: "my-site/public"
           to: 's3://bradking.consulting'
 
 workflows:
