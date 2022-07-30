@@ -7,14 +7,11 @@ jobs:
   deploy:
     docker:
       - image: 'cimg/python:3.6'
-    environment:
-      SRC_DIRECTORY: "bradking.consulting/public"
-      S3_BUCKET_LOCATION: 's3://bradking.consulting'
     steps:
       - checkout
       - aws-s3/sync:
-          from: ${SRC_DIRECTORY}
-          to: ${S3_BUCKET_LOCATION}
+          from: "bradking.consulting/public"
+          to: 's3://bradking.consulting'
 
 workflows:
   build-deploy:
@@ -22,4 +19,4 @@ workflows:
       - hugo/build:
           html-proofer: false
           source: bradking.consulting/
-      #- deploy
+      - deploy
