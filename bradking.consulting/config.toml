@@ -131,7 +131,7 @@ url = "mailto:consulting@bradking.co.uk"
 weight = 6
 
 [[Languages.en.menu.main]]
-name = "Posts"
+name = "Blog"
 url = "/blog"
 weight = 7
 
