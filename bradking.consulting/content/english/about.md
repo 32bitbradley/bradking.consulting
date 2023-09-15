@@ -1,11 +1,11 @@
 ---
 title : "About Me"
-image : "images/backgrounds/me.png"
+image : "images/backgrounds/me.jpg"
 # button
 button:
   enable : true
-  label : "Download my CV"
-  link : "https://bradking.consulting/cv_latest.pdf"
+  label : "Find me on LinkedIn"
+  link : "https://www.linkedin.com/in/brad-k-376516127/"
 
 ########################### Experience ##############################
 experience:
@@ -37,24 +37,24 @@ experience:
 
 ############################### Skill #################################
 skill:
-  enable : false
-  title : "SKILL"
+  enable : true
+  title : "Skills"
   skill_list:
     # skill item loop
-    - name : "Web Development"
-      percentage : "98%"
-      
-    # skill item loop
-    - name : "Graphic Design"
-      percentage : "85%"
-      
-    # skill item loop
-    - name : "Database Management"
+    - name : "Infrastructure As Code"
       percentage : "90%"
       
     # skill item loop
-    - name : "Wordpress"
-      percentage : "70%"
+    - name : "Python Software Development"
+      percentage : "60%"
+      
+    # skill item loop
+    - name : "DevOps and Automation"
+      percentage : "80%"
+      
+    # skill item loop
+    - name : "Cyber Security"
+      percentage : "80%"
 
 
 # custom style
@@ -63,6 +63,14 @@ custom_attributes: ""
 custom_css: ""
 ---
 
-<p>Hi there, I'm Brad, a full on techy with a love for big data, infrastructure management and cyber security.</p>
-<p>By day I'm a SysOps/DevOps engineer, keeping the cogs turning for a leading tech company. By night, I'm developing a next-generation threat intelligence platform, driven by a global network of honeypots.</p>
-<p>I also offer consultancy services to investigate problems, architect infrastructure, perform health checks or provide cyber secuity guidance.</p>
+<p>
+Hi there, I'm Brad, a full on techy with a passion for big data, infrastructure management and cyber security.
+</p>
+<p>
+I spend most of my time building <a href="https://honeypotdb.com">HoneypotDB</a>, a next-generation threat intelligence platform, driven by a global network of honeypots.
+</p>
+<p>
+I also offer consultancy services to investigate problems, architect infrastructure, perform health checks or provide cyber security guidance.
+
+Send me and email below, lets have a chat!
+</p>

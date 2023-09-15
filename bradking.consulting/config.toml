@@ -67,7 +67,7 @@ logo_light = "images/logo.png"
 logo_dark = "images/logo-dark.png"
 logo_width = "150px"
 # Meta data
-description = "Consult with Bradn"
+description = "Consult with Brad"
 author = "Brad King"
 
 # Preloader
@@ -131,7 +131,7 @@ url = "mailto:consulting@bradking.co.uk"
 weight = 6
 
 [[Languages.en.menu.main]]
-name = "Blog"
-url = "/blog"
+name = "HoneypotDB"
+url = "https://honeypotdb.com"
 weight = 7
 

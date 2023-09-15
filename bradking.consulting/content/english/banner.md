@@ -6,12 +6,13 @@ last_name : ""
 bg_image : ""
 # animated text loop
 occupations:
+- "ansible-playbook infrastructure_management.yml"
+- "python3 development.py"
+- "terraform apply infrastructure_as_code.tfplan"
 - "/usr/share/elasticsearch"
 - "bin/logstash --config.test_and_exit -f piepline.conf"
 - "nmap -sV -sS -T4 security.hardening"
 - "systemctl restart wazuh-manager"
-- "ansible-playbook infrastructure_management.yml"
-- "python3 development.py"
 
 # slider background image loop
 slider_images:
