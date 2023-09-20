@@ -72,7 +72,7 @@ author = "Brad King"
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
   
 ############################# social site ########################
