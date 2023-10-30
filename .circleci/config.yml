@@ -1,6 +1,5 @@
 version: '2.1'
 orbs:
-  hugo: circleci/hugo@1.3.0
   aws-s3: circleci/aws-s3@3.0.0
 jobs:
 
@@ -10,17 +9,12 @@ jobs:
     steps:
       - attach_workspace:
           at: my-site
-      - run: ls -lah my-site
+      - run: ls -lah bradking.consulting/
       - aws-s3/sync:
-          from: "my-site/public"
+          from: "bradking.consulting/"
           to: 's3://bradking.consulting'
 
 workflows:
   build-deploy:
     jobs:
-      - hugo/build:
-          html-proofer: false
-          source: bradking.consulting/
-      - deploy:
-          requires:
-            - hugo/build
+      - deploy
