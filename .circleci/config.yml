@@ -9,9 +9,9 @@ jobs:
     steps:
       - attach_workspace:
           at: my-site
-      - run: ls -lah bradking.consulting/
+      - run: ls -lah bradking.consulting
       - aws-s3/sync:
-          from: "bradking.consulting/"
+          from: "bradking.consulting"
           to: 's3://bradking.consulting'
 
 workflows:
