@@ -9,7 +9,7 @@ jobs:
     steps:
       - attach_workspace:
           at: my-site
-      - run: ls -lah
+      - run: ls -lah my-site
       - aws-s3/sync:
           from: "my-site/bradking.consulting"
           to: 's3://bradking.consulting'
