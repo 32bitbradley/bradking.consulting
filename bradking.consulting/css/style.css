@@ -219,7 +219,7 @@ section {
     padding: 20px;
 }
 
-#clients .col-2-3 [class*='col-'] {
+#skills .col-2-3 [class*='col-'] {
     padding: 0;
 }
 
@@ -1384,7 +1384,7 @@ blockquote {
 
 /* --------- 6.6 Clients ---------- */
 
-#clients a {
+#skills a {
     display: block;
     text-align: center;
     position: relative;
@@ -1393,7 +1393,7 @@ blockquote {
     color: #fff;
 }
 
-#clients img {
+#skills img {
     display: inline-block;
     padding: 15px 25px;
     height: 200px;
@@ -1402,7 +1402,7 @@ blockquote {
 }
 @media (max-width: 480px) {
 
-    #clients img {
+    #skills img {
         height: 128px;
     }
 }
@@ -1424,7 +1424,7 @@ blockquote {
     transition: all 0.3s ease-out;
 }
 
-#clients a:hover .client-overlay {
+#skills a:hover .client-overlay {
     opacity: 1;
 }
 
