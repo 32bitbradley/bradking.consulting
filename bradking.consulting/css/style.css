@@ -794,6 +794,7 @@ h6 {
     padding-top: 5%;
 }
 
+
 #banner .section-heading:before {
     content: "";
     display: block;
@@ -2198,7 +2199,6 @@ blockquote {
     #banner h1 {
         font-size: 48px;
     }
-
     /* Hide Elements */
     a#scrollUp {
         display: none !important;
