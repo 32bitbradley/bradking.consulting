@@ -28,6 +28,7 @@
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
@@ -232,10 +233,10 @@
 
                 <a href="images/gallery-images/dish_mcr.jpg" data-featherlight="image" class="col-3 wow fadeIn"
                    data-wow-delay="0.1s"><img src="images/gallery-images/dish_mcr.jpg" alt="Landing Page"/></a>
-                <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.3s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
-                <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.5s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/mcr_tech_festival.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.3s"><img src="images/gallery-images/mcr_tech_festival.jpg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/mcr_drone.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.5s"><img src="images/gallery-images/mcr_drone.jpg" alt="Landing Page"/></a>
                 <!-- <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn"
                    data-wow-delay="1.1s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
@@ -307,27 +308,27 @@
                     <h2 class="section-title">Testimonials</h2>
                 </div>
 
-                <blockquote class="col-3 testimonial classic">
+                <blockquote class="col-2 testimonial classic">
                     <img src="https://media.licdn.com/dms/image/C4D03AQE-DbuknxJwfA/profile-displayphoto-shrink_400_400/0/1626610022640?e=1704326400&v=beta&t=BK0ERMp3yxnT-OObz_ANzS0BiJiJl581EnYvIqFhD_U" alt="User"/>
-                    <q>Brad is a highly skilled engineer who excels at taking a concept from idea to execution.</q>
-                    <footer>Jess Rowley - DevOps Engineer</footer>
+                    <q class="readmore">
+                        Brad is a highly skilled engineer who excels at taking a concept from idea to execution. I've worked on a number of projects where Brad has been able to optimise the design and produce quality well tested code to achieve the target even including plans on how we can take it further. With his background in security, he's provided valuable insite into how we can improve and follow standards better and the real life impact on the work needed. I'd highly recommend Bradley to anyone who needs a DevSecOps engineer. 
+                    </q>
+                    <footer>Jess Rowley - DevOps Engineer <a href="https://www.linkedin.com/in/jessrowley/"><i class="fa-brands fa-linkedin"></i></a></footer>
                 </blockquote>
 
-                <!-- <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/user-2.jpg" alt="User"/>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua</q>
-                    <footer>Roslyn Doe - Happy Customer</footer>
-                </blockquote>
+                <blockquote class="col-2 testimonial classic">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQHyzDeLVUJtDQ/profile-displayphoto-shrink_400_400/0/1693050239720?e=1704326400&v=beta&t=d2S9OBlSu_GHYHPJHTTdhZBKwYT8tEYkicyTrZEiGfo" alt="User"/>
+                    <q class="readmore">
+                        I had the great opportunity to consult with Brad King on my product development, and his guidance has been invaluable. Brad’s expertise extends far beyond basic recommendations; he offered actionable advice that has significantly impacted the direction and quality of my product.
 
-                <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/user-3.jpg" alt="User"/>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua</q>
-                    <footer>Thomas Doe - Happy Customer</footer>
-                </blockquote> -->
+                        One standout moment was when he pointed me to a tool that not only improved my product but also added an extra layer of reliability. His well-rounded perspective has been a game-changer for my business.
+                        
+                        Having Brad King in your corner is an asset, to say the least. His guidance is insightful, his advice is always on point, and his support has been instrumental in helping me navigate the complexities of product development.
+                        
+                        If you’re in need of expert guidance to propel your business to the next level, I can’t recommend Brad King highly enough.
+                    </q>
+                    <footer>Chinyelu Philomena Karibi-Whyte - Cyber Security Consultant <a href="https://www.linkedin.com/in/chinyelu-philomena-karibi-whyte/"><i class="fa-brands fa-linkedin"></i></a></footer>
+                </blockquote>
 
             </div>
 
@@ -538,6 +539,21 @@
     <!--End of Footer-->
 
 </div>
+
+<!-- Readsmore Js -->
+<script src="https://unpkg.com/read-smore@2.0.4/dist/index.umd.js"></script>
+
+<script>
+
+    const ReadSmore = window.readSmore;
+
+    const readMoreEls = document.querySelectorAll('.readmore');
+    const options = {
+        wordsCount: 25
+    }
+    const RMs = ReadSmore(readMoreEls, options)
+    RMs.init();
+</script>
 
 <!-- Include JavaScript resources -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js" integrity="sha512-J9QfbPuFlqGD2CYVCa6zn8/7PEgZnGpM5qtFOBZgwujjDnG5w5Fjx46YzqvIh/ORstcj7luStvvIHkisQi5SKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
