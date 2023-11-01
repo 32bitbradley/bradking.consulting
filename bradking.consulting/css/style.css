@@ -977,10 +977,11 @@ blockquote {
 }
 
 /* --------- 6.4 Gallery ---------- */
-
 #gallery img {
-    max-height: 300px;
+    height: 300px;
+    width: auto;
     filter: grayscale(80%);
+    object-fit: cover;
 }
 
 #gallery [class*='col-'] {
