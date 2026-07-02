@@ -18,7 +18,11 @@ function initNav() {
     });
 }
 function initReveal() {}
-function initLightbox() {}
+function initLightbox() {
+    if (typeof GLightbox === 'undefined') { return; }
+    if (!document.querySelector('.glightbox')) { return; }
+    GLightbox({ selector: '.glightbox' });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     initNav();

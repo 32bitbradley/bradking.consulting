@@ -232,3 +232,14 @@ p { margin: 0 0 var(--space-2); }
     transition: opacity .2s;
 }
 .tech:hover .tech__overlay { opacity: 1; }
+
+/* ===== Gallery ===== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+}
+.gallery a { display: block; border-radius: var(--radius); overflow: hidden; }
+.gallery img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; transition: transform .3s ease; }
+.gallery a:hover img { transform: scale(1.05); }
