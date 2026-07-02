@@ -25,5 +25,5 @@ python3 -m http.server 8000
 
 ## Deploy
 
-CircleCI (`.circleci/config.yml`) syncs the `bradking.consulting/` directory to the
-`s3://bradking.consulting` bucket on push; Cloudflare serves it. No build step runs.
+GitHub Actions (`.github/workflows/deploy.yml`) publishes the `bradking.consulting/`
+directory to GitHub Pages on every push to `main`. No build step runs.
