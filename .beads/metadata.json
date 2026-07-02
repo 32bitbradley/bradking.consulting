@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "bradking_consulting",
+  "project_id": "bcadebc5-845a-435d-a7ea-9b117a3f22c8"
+}
