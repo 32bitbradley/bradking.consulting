@@ -352,3 +352,5 @@ p { margin: 0 0 var(--space-2); }
     .labs__cursor { animation: none; }
     * { transition-duration: .001ms !important; animation-duration: .001ms !important; }
 }
+.contact__address { font-style: normal; color: var(--color-dark-muted); margin-top: var(--space-4); }
+.contact__address i { color: var(--color-labs); margin-right: .4rem; }
