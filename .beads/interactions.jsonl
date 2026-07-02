@@ -1,0 +1,1 @@
+{"id":"int-48372d39da30ee5d1f85e7dc6a680202","kind":"field_change","created_at":"2026-07-02T21:44:47.999888003Z","actor":"Brad King","issue_id":"bradking_consulting-yf0","extra":{"field":"status","new_value":"closed","old_value":"in_progress","reason":"SaltedHash rebuild implemented on branch saltedhash-rebuild, all 13 plan tasks complete"}}
