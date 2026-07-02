@@ -1,7 +1,29 @@
 # bradking.consulting
 
-This repo holds the source code for https://bradking.consulting, my consulting site.
+Source for [https://bradking.consulting](https://bradking.consulting) — the SaltedHash Labs
+site (infrastructure & DevOps consultancy, plus a teaser for the studio's own SaaS).
 
-This site is built using Hugo, hosted in an S3 bucket and served via cloudflare.
+## Stack
 
-CircleCI is setup to auto build and deploy changes to this repo.
+Plain static **HTML / CSS / JS** — no framework, no build step. The whole site is three files
+under `bradking.consulting/`:
+
+- `index.html` — single-page, anchored sections
+- `css/main.css` — design-token-driven styles
+- `js/main.js` — vanilla JS (nav toggle, scroll-reveal, GLightbox init)
+
+External dependencies are CDN-loaded: Font Awesome (icons), Google Fonts (Inter + JetBrains
+Mono), and GLightbox (gallery lightbox).
+
+## Local preview
+
+```bash
+cd bradking.consulting
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+## Deploy
+
+CircleCI (`.circleci/config.yml`) syncs the `bradking.consulting/` directory to the
+`s3://bradking.consulting` bucket on push; Cloudflare serves it. No build step runs.
