@@ -14,8 +14,12 @@ jobs:
       - aws-s3/sync:
           from: "bradking.consulting"
           to: 's3://bradking.consulting'
+          arguments: --delete
 
 workflows:
   build-deploy:
     jobs:
-      - deploy
+      - deploy:
+          filters:
+            branches:
+              only: main
