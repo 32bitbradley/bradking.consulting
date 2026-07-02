@@ -138,3 +138,25 @@ p { margin: 0 0 var(--space-2); }
     .nav-menu li { width: 100%; text-align: center; }
     .nav-menu a { display: block; padding: var(--space-2); border-top: 1px solid var(--color-line); }
 }
+
+/* ===== Hero ===== */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-dark);
+    color: var(--color-dark-ink);
+    padding: calc(var(--nav-h) + var(--space-6)) var(--space-3) var(--space-6);
+}
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(40rem 30rem at 15% 10%, rgba(79, 124, 255, .35), transparent 60%),
+        radial-gradient(35rem 28rem at 85% 20%, rgba(124, 92, 255, .30), transparent 60%),
+        radial-gradient(30rem 30rem at 60% 100%, rgba(45, 212, 191, .18), transparent 60%);
+    filter: saturate(120%);
+}
+.hero__inner { position: relative; }
+.hero__title { font-size: clamp(2.2rem, 6vw, 3.8rem); max-width: 18ch; }
+.hero__sub { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--color-dark-muted); max-width: 52ch; margin-bottom: var(--space-4); }
+.hero__cta { display: flex; flex-wrap: wrap; gap: var(--space-2); }
