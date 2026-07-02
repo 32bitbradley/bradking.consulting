@@ -315,3 +315,8 @@ p { margin: 0 0 var(--space-2); }
     color: #fff;
     background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
 }
+
+/* ===== Contact ===== */
+.contact__bio { max-width: 62ch; }
+.contact__engage { color: var(--color-dark-ink); margin: var(--space-3) 0 var(--space-4); }
+.contact__engage strong { color: var(--color-labs); }
