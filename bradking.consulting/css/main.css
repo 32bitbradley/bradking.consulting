@@ -279,3 +279,39 @@ p { margin: 0 0 var(--space-2); }
 @media (max-width: 760px) {
     .labs { grid-template-columns: 1fr; }
 }
+
+/* ===== Testimonials ===== */
+.testimonials { background: #f7f8fa; }
+.quotes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+.quote {
+    margin: 0;
+    background: #fff;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    padding: var(--space-4);
+}
+.quote p { color: var(--color-ink); }
+.quote__by {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    font-size: .92rem;
+    color: var(--color-muted);
+    font-weight: 500;
+}
+.avatar {
+    flex: 0 0 auto;
+    width: 46px; height: 46px;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
+}
