@@ -320,3 +320,19 @@ p { margin: 0 0 var(--space-2); }
 .contact__bio { max-width: 62ch; }
 .contact__engage { color: var(--color-dark-ink); margin: var(--space-3) 0 var(--space-4); }
 .contact__engage strong { color: var(--color-labs); }
+
+/* ===== Footer ===== */
+.site-footer {
+    background: var(--color-dark);
+    color: var(--color-dark-muted);
+    padding: var(--space-3);
+}
+.site-footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+}
+.site-footer p { margin: 0; }
+.site-footer a { color: var(--color-dark-ink); font-size: 1.3rem; }
+.site-footer a:hover { color: var(--color-labs); }
