@@ -356,3 +356,23 @@ p { margin: 0 0 var(--space-2); }
 .contact__address i { color: var(--color-labs); margin-right: .4rem; }
 .tech__img--grey { filter: grayscale(1); }
 .tech img[src$=".svg"] { height: 46px; }
+
+/* ===== Hero flair: drifting mesh + faint grid ===== */
+.hero__bg {
+    animation: hero-drift 16s ease-in-out infinite alternate;
+}
+@keyframes hero-drift {
+    from { transform: translate3d(-2%, -1%, 0) scale(1.05); }
+    to   { transform: translate3d(2%, 1.5%, 0) scale(1.12); }
+}
+.hero__bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(rgba(230, 237, 243, .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(230, 237, 243, .05) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(60rem 40rem at 30% 20%, #000 0%, transparent 75%);
+    -webkit-mask-image: radial-gradient(60rem 40rem at 30% 20%, #000 0%, transparent 75%);
+}
