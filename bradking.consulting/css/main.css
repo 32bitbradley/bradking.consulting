@@ -354,3 +354,4 @@ p { margin: 0 0 var(--space-2); }
 }
 .contact__address { font-style: normal; color: var(--color-dark-muted); margin-top: var(--space-4); }
 .contact__address i { color: var(--color-labs); margin-right: .4rem; }
+.tech__img--grey { filter: grayscale(1); }
